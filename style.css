@@ -524,6 +524,9 @@ h3 {
   color: #ffffff;
   background: #25d366;
   box-shadow: 0 18px 38px rgba(5, 5, 5, 0.24);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
   transform: translateY(0);
   transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
@@ -558,6 +561,11 @@ h3 {
   transform: translateY(-4px);
   background: #1fb85a;
   box-shadow: 0 22px 46px rgba(5, 5, 5, 0.3);
+}
+
+.whatsapp-float.is-dragging {
+  cursor: grabbing;
+  transition: none;
 }
 
 @keyframes whatsapp-pulse {
@@ -650,10 +658,6 @@ h3 {
 
   .footer-grid {
     grid-template-columns: 1.5fr 0.75fr 1fr;
-  }
-
-  .whatsapp-float {
-    display: none;
   }
 }
 
